@@ -15,15 +15,15 @@ A Pi 5 project using Raspi Module 3 camera that detects faces in real time and a
 
 ## Setup
 1. Install dependencies:
-       sudo apt update
-       sudo apt install python3-pip python3-smbus ffmpeg libsm6 libxext6
-       pip3 install adafruit-circuitpython-pca9685 adafruit-circuitpython-servokit sshkeyboard opencv-contrib-python
+> sudo apt update<br>
+sudo apt install python3-pip python3-smbus ffmpeg libsm6 libxext6<br>
+pip3 install adafruit-circuitpython-pca9685 adafruit-circuitpython-servokit sshkeyboard opencv-contrib-python
 
 2. Enable I2C:
-       sudo raspi-config  # Enable I2C under Interface Options in the Pi settings, then reboot
+> sudo raspi-config  # Enable I2C under Interface Options in the Pi settings, then reboot
 
 3. Run the script:
-       python3 main.py
+> python3 main.py
 
 ## Notes
 - The RTSP at 'rtsp://localhost:8888/cam' by default.
