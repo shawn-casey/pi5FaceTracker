@@ -11,7 +11,7 @@ A Pi 5 project using Raspi Module 3 camera that detects faces in real time and a
 ## Hardware
 - Raspberry Pi 5 (anything older may not have enough CPU power)
 - Raspberry Pi Camera (v3)
-- PCA9685 servo controller + 2 servos
+- PCA9685 servo controller + 2 SG92R servos
 
 ## Setup
 1. Install dependencies:
@@ -24,8 +24,3 @@ pip3 install adafruit-circuitpython-pca9685 adafruit-circuitpython-servokit sshk
 
 3. Run the script:
 > python3 main.py
-
-## Notes
-- The RTSP at 'rtsp://localhost:8888/cam' by default.
-- Face detection may need some lighting adjustments for best results.
-- Servo range can be tweaked in the code for your specific hardware.
