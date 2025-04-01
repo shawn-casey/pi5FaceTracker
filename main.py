@@ -48,7 +48,7 @@ class TrackerCamera:
         # Initialize servo controller
         print("Initializing servo controller...")
         self.servo_kit = ServoKit(channels=16, address=PCA9685_ADDRESS)
-        self.servo_kit.servo[SERVO_PAN_CHANNEL].set_pulse_width_range(500, 2500)  # Adjust based on your servos
+        self.servo_kit.servo[SERVO_PAN_CHANNEL].set_pulse_width_range(500, 2500)
         self.servo_kit.servo[SERVO_TILT_CHANNEL].set_pulse_width_range(500, 2500)
         
         # Initialize camera
